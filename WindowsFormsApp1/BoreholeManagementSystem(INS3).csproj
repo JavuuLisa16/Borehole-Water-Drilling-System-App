@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C0AE917-D647-4F51-A388-1E0C6FE1A96F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminClerkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminClerkForm.Designer.cs">
+      <DependentUpon>AdminClerkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminClientForm.Designer.cs">
+      <DependentUpon>AdminClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDspForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDspForm.Designer.cs">
+      <DependentUpon>AdminDspForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminTechnicianForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminTechnicianForm.Designer.cs">
+      <DependentUpon>AdminTechnicianForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppTheme.cs" />
+    <Compile Include="Assignment.cs" />
+    <Compile Include="ClerkProfile.cs" />
+    <Compile Include="ClerkProfileStore.cs" />
+    <Compile Include="ClerkSqlService.cs" />
+    <Compile Include="ClientProfile.cs" />
+    <Compile Include="ClientProfileStore.cs" />
+    <Compile Include="ClientSqlService.cs" />
+    <Compile Include="Credential.cs" />
+    <Compile Include="CredentialSqlService.cs" />
+    <Compile Include="CurrentUser.cs" />
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="DrillingServiceProvider.cs" />
+    <Compile Include="DrillingServiceProviderSqlService.cs" />
+    <Compile Include="FieldData.cs" />
+    <Compile Include="FieldDataSqlService.cs" />
+    <Compile Include="ForgotCredentialsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotCredentialsForm.Designer.cs">
+      <DependentUpon>ForgotCredentialsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ITAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ITAdminForm.Designer.cs">
+      <DependentUpon>ITAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClerkClientsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClerkClientsForm.Designer.cs">
+      <DependentUpon>ClerkClientsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClerkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClerkForm.Designer.cs">
+      <DependentUpon>ClerkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClerkProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClerkProfileForm.Designer.cs">
+      <DependentUpon>ClerkProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClerkReviewRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClerkReviewRequestForm.Designer.cs">
+      <DependentUpon>ClerkReviewRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForm.Designer.cs">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientProfileForm.Designer.cs">
+      <DependentUpon>ClientProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClerkServiceRequestsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClerkServiceRequestsForm.Designer.cs">
+      <DependentUpon>ClerkServiceRequestsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FieldDataForm.Designer.cs">
+      <DependentUpon>FieldDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ITAdminserviceFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ITAdminserviceFrom.Designer.cs">
+      <DependentUpon>ITAdminserviceFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationSqlService.cs" />
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyProfileTechnicianForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyProfileTechnicianForm.Designer.cs">
+      <DependentUpon>MyProfileTechnicianForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyRequestsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyRequestsForm.Designer.cs">
+      <DependentUpon>MyRequestsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganisationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganisationForm.Designer.cs">
+      <DependentUpon>OrganisationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganisationTechnicianForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganisationTechnicianForm.Designer.cs">
+      <DependentUpon>OrganisationTechnicianForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs" />
+    <Compile Include="PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentSqlService.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProviderService.cs" />
+    <Compile Include="ProviderServiceSqlService.cs" />
+    <Compile Include="Review.cs" />
+    <Compile Include="ReviewsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReviewsForm.Designer.cs">
+      <DependentUpon>ReviewsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewSqlService.cs" />
+    <Compile Include="ServiceRequest.cs" />
+    <Compile Include="ServiceRequestSqlService.cs" />
+    <Compile Include="ServiceRequetsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceRequetsForm.Designer.cs">
+      <DependentUpon>ServiceRequetsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiteAssessment.cs" />
+    <Compile Include="SiteAssessmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiteAssessmentForm.Designer.cs">
+      <DependentUpon>SiteAssessmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiteAssessmentSqlService.cs" />
+    <Compile Include="SiteVisit.cs" />
+    <Compile Include="SiteVisitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiteVisitForm.Designer.cs">
+      <DependentUpon>SiteVisitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiteVisitSqlService.cs" />
+    <Compile Include="Technician.cs" />
+    <Compile Include="TechnicianAssignments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechnicianAssignments.Designer.cs">
+      <DependentUpon>TechnicianAssignments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechnicianAssignmentSqlService.cs" />
+    <Compile Include="TechnicianForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechnicianForm.Designer.cs">
+      <DependentUpon>TechnicianForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechnicianProfile.cs" />
+    <Compile Include="TechnicianProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechnicianProfileForm.Designer.cs">
+      <DependentUpon>TechnicianProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechnicianProfileStore.cs" />
+    <Compile Include="TechnicianSqlService.cs" />
+    <EmbeddedResource Include="AdminClerkForm.resx">
+      <DependentUpon>AdminClerkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminClientForm.resx">
+      <DependentUpon>AdminClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDspForm.resx">
+      <DependentUpon>AdminDspForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminTechnicianForm.resx">
+      <DependentUpon>AdminTechnicianForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotCredentialsForm.resx">
+      <DependentUpon>ForgotCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ITAdminForm.resx">
+      <DependentUpon>ITAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClerkClientsForm.resx">
+      <DependentUpon>ClerkClientsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClerkForm.resx">
+      <DependentUpon>ClerkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClerkProfileForm.resx">
+      <DependentUpon>ClerkProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClerkReviewRequestForm.resx">
+      <DependentUpon>ClerkReviewRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientForm.resx">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientProfileForm.resx">
+      <DependentUpon>ClientProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClerkServiceRequestsForm.resx">
+      <DependentUpon>ClerkServiceRequestsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FieldDataForm.resx">
+      <DependentUpon>FieldDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ITAdminserviceFrom.resx">
+      <DependentUpon>ITAdminserviceFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyProfileTechnicianForm.resx">
+      <DependentUpon>MyProfileTechnicianForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyRequestsForm.resx">
+      <DependentUpon>MyRequestsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganisationForm.resx">
+      <DependentUpon>OrganisationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganisationTechnicianForm.resx">
+      <DependentUpon>OrganisationTechnicianForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReviewsForm.resx">
+      <DependentUpon>ReviewsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceRequetsForm.resx">
+      <DependentUpon>ServiceRequetsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiteAssessmentForm.resx">
+      <DependentUpon>SiteAssessmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiteVisitForm.resx">
+      <DependentUpon>SiteVisitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechnicianAssignments.resx">
+      <DependentUpon>TechnicianAssignments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechnicianForm.resx">
+      <DependentUpon>TechnicianForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechnicianProfileForm.resx">
+      <DependentUpon>TechnicianProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
